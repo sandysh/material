@@ -82,18 +82,8 @@
 <ul id="nav-mobile" class="side-nav fixed blue-grey darken-4" style="width: 240px;">
 
           <li><div class="current-site">Current Site :</div></li>
-          <li><a class='dropdown-button default-site-dropdown' href='#' data-activates='default-site'>Vidlify<i class="fa fa-angle-right current-site-arrow"></i></a></li>
-          
-          <!-- Dropdown Structure -->
-          <ul id='default-site' class='dropdown-content'>
-            <li><a href="#!"><input type="text" placeholder="Site Search"></a></li>
-            <li><a href="#!">PrezHero</a></li>
-            <li><a href="#!">Visibly</a></li>8px
-            <li><a href="#!">Ad Hero</a></li>
-            <li><a href="#!">Video Contest</a></li>
-            <li><a href="#!">Social Contest</a></li>
-            <li><a href="#!">KV Social</a></li>
-          </ul>
+          <li><a class='modal-trigger' href="#default-site" data-activates='default-site'>Vidlify<i class="fa fa-angle-right current-site-arrow"></i></a></li>
+  
 
         <li class="bold active"><a href="#" class="waves-effect waves-teal"><i class="fa fa-home"></i>Home</a></li>
         <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="fa fa-dashboard"></i>Dashboard</a></li>
@@ -108,7 +98,7 @@
       <div class="container">
       
       <div class="row">
-
+      
       <div class="col s12 m9 l9"><h5>Today's Report</h5></div>
       <div class="col s12 m3 l3 hide-on-med-and-down"><h5>Total Visitor's</h5></div>
       
@@ -411,6 +401,56 @@
     </div>
   </div>
 
+<!-- Default site Modal -->
+
+<!-- Modal Structure -->
+<div id="default-site" class="modal bottom-sheet change-default-site">
+  <div class="modal-content">
+    <h4>Current Site: Vidlify</h4>
+    <div class="row">
+    <div class="col s12 m6 l6">
+      <div class="input-field col s6">
+        <input value="" id="first_name2" type="text" class="validate">
+        <label class="active" for="first_name2">Search Sites</label>
+      </div>
+    </div>
+    </div>
+  <table class="striped">
+       <thead>
+         <tr>
+             <th data-field="id">Site Name</th>
+             <th data-field="name">Live Sites</th>
+             <th data-field="price">Total Triggers</th>
+             <th data-field="price">Triggers Activated Today</th>
+         </tr>
+       </thead>
+
+       <tbody>
+         <tr>
+           <td>Viral Stores</td>
+           <td>1000</td>
+           <td>1000</td>
+           <td>1000</td>
+         </tr>
+         <tr>
+           <td>Visibly</td>
+           <td>1000</td>
+           <td>1000</td>
+           <td>1000</td>
+         </tr>
+         <tr>
+           <td>KV Social Bonus</td>
+           <td>1000</td>
+           <td>1000</td>
+           <td>1000</td>
+         </tr>
+       </tbody>
+     </table>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
 
 
       <!--Import jQuery before materialize.js-->

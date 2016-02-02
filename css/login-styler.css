@@ -1,0 +1,35 @@
+body{
+	background: url('../images/login_bg.png') repeat;
+}
+
+.login-wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	/*border: 1px solid black;*/
+	max-width: 400px;
+	position: relative;
+	top: 150px;
+}
+
+.logo-image{
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	left: 60px;
+	width: 255px;
+}
+
+.remember{
+	float: left;
+	margin-left: 15px;
+}
+
+.login-btn{
+	margin-right: 10px;
+}
+
+.unlock{
+	position: absolute;
+	top: -2px;
+	right: 5px;
+}
