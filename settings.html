@@ -1,0 +1,219 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+    
+      <!-- Top Nav Bar  -->
+      <!-- Dropdown Structure -->
+  <header id="header">
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!"><i class="material-icons dp48 left">settings</i>Settings</a></li>
+          <li class="divider"></li>
+          <li><a href="#!"><i class="material-icons dp48 left" style="color:red">settings_power</i>Logout</a></li>
+        </ul>
+
+        <ul id="drop2" class="dropdown-content">
+          <li><a href="#!"><i class="material-icons dp48 left">settings</i>Settings</a></li>
+          <li class="divider"></li>
+          <li><a href="#!"><i class="material-icons dp48 left" style="color:red">settings_power</i>Logout</a></li>
+        </ul>
+
+    <div class="navbar-fixed">
+    <nav>
+    <div class="nav-wrapper white">
+      <a href="#!" class="brand-logo"><img src="images/logo.png"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        
+          
+        
+        <li><a class="dropdown-button  grey lighten-2" href="#!" data-activates="dropdown1">
+        
+         <img src="images/yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+        
+        John Doe
+        <span class="user-role">Administrator</span>
+        <i class="material-icons right">arrow_drop_down</i>
+        </a>
+
+        </li>
+       <i class="fa fa-support"></i>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+      <!-- <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Sandesh Satyal<i class="material-icons dp48 right">person_pin</i></a></li>
+               --> 
+      <li><a class="dropdown-button grey lighten-2" href="#!" data-activates="drop2">
+      
+       <img src="images/yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+      
+      John Doe
+      <span class="user-role">Administrator</span>
+      <i class="material-icons right">arrow_drop_down</i>
+      </a>
+
+      </li>
+      <li class="bold active"><a href="#" class="waves-effect waves-teal">Home</a></li>
+            <li class="bold"><a href="#" class="waves-effect waves-teal">Dashboard</a></li>
+            <li class="bold"><a href="#" class="waves-effect waves-teal">Add New Site</a></li>
+            <li class="bold"><a href="#" class="waves-effect waves-teal">Add New Trigger</a></li>
+            <li class="bold"><a href="#" class="waves-effect waves-teal">Site Statistics</a></li>
+            <li class="bold"><a href="#" class="waves-effect waves-teal">Training</a></li>
+            <li class="bold"><a href="#" class="waves-effect waves-teal">Settings</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+</header>
+<!-- Top Nav Ends Here -->
+
+<!-- Side Navigations -->
+<div class="col s12 m4 l4">
+<ul id="nav-mobile" class="side-nav fixed blue-grey darken-4" style="width: 240px;">
+
+          <li><div class="current-site">Current Site :</div></li>
+          <li><a class='modal-trigger' href="#default-site" data-activates='default-site'>Vidlify<i class="fa fa-angle-right current-site-arrow"></i></a></li>
+  
+
+        <li class="bold active"><a href="#" class="waves-effect waves-teal"><i class="fa fa-home"></i>Home</a></li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="fa fa-tv"></i>Add New Site</a></li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="fa fa-bomb"></i>Add New Trigger</a></li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="fa fa-bar-chart-o"></i>Site Statistics</a></li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="fa fa-user"></i>Training</a></li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="fa fa-gear"></i>Settings</a></li>
+      </ul>
+   </div> 
+     <!-- Content Container -->
+      <div class="container">
+      
+      <div class="row">
+      
+      <div class="col s12 m9 l9"><h5>Today's Report</h5></div>
+      <div class="col s12 m3 l3 hide-on-med-and-down"><h5>Total Visitor's</h5></div>
+      
+      <div class="col s12 m12 l12">
+          
+            <div class="col s12 m12 l3">
+              <div class="card-panel custom-panel green-card hoverable">
+                <span class="white-text"><h4>10,176</h4>
+                </span>
+                <span class="card-title stat-title">Visitors</span>
+                <!-- <img src="images/visitors.png" class="cards-stats-image"> -->
+              </div>
+            </div>
+            <div class="col s12 m12 l3">
+              <div class="card-panel custom-panel orange-card hoverable">
+                <span class="white-text"><h4>9,646</h4>
+                </span>
+                <span class="card-title">Unique</span>
+                <!-- <img src="images/unique.png" class="cards-stats-image"> -->
+              </div>
+            </div>
+            <div class="col s12 m12 l3">
+              <div class="card-panel custom-panel red-card hoverable">
+                <span class="white-text"><h4>3,176</h4> 
+                </span>
+                <span class="card-title">Bounced</span>
+                <!-- <img src="images/bounced.png" class="cards-stats-image"> -->
+              </div>
+            </div>
+            <div class="col s12 m5 l3 hide-on-up hide-on-large-only"><h5>Total Visitor's</h5></div>
+            <div class="col s12 m12 l3">
+              <div class="card-panel custom-panel black-card hoverable">
+                <span class="white-text"><h4>10,176</h4>
+                </span>
+                <span class="card-title stat-title">Visitors</span>
+                <!-- <img src="images/total_visitors.png" class="cards-stats-image"> -->
+              </div>
+            </div>
+
+      </div>
+     </div>
+
+     
+       <div class="row">
+         <div class="col s12">
+           <ul class="tabs">
+             <li class="tab col s3"><a href="#user-ac" class="active">Account</a></li>
+             <li class="tab col s3"><a href="#hosting">Hosting</a></li>
+             <li class="tab col s3"><a href="#reporting">Email Reporting</a></li>
+           </ul>
+         </div>
+         <div id="user-ac" class="col s12">
+         <div class="row">
+         <h5>User Account Information</h5>
+          
+        
+            <div class="col s3">
+              <ul class="tabs sub-tabs">
+                <li class="tab col s3"><a href="#account" class="active" >Account</a></li>
+                <li class="tab col s3"><a href="#password">Password</a></li>
+              </ul>
+            </div>
+            <div id="account" class="col s12">
+              <div class="col s12 m4">
+                <div class="card-panel white">
+                <form>
+                <div class="row">
+                  <div class="input-field col s12 l7">
+                     <input value="" id="first_name1" type="text" class="validate">
+                     <label class="active" for="first_name1">First Name</label>
+                   </div>
+                   <div class="input-field col s12 l7">
+                      <input value="" id="last_name" type="text" class="validate">
+                      <label class="active" for="last_name">Last Name</label>
+                    </div>
+                    <div class="input-field col s12 l7">
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                    </div>
+                </div>
+                </form>
+
+                </div>
+              </div>
+            </div>
+            <div id="password" class="col s12">Test 2</div>
+        
+
+     
+         </div>
+         </div>
+         <div id="hosting" class="col s12">Test 2</div>
+         <div id="reporting" class="col s12">Test 4</div>
+       </div>
+
+
+      </div> <!-- Container end -->
+
+
+      
+       <!-- Footer section -->
+      <div class="col s12 m12 l12">
+      <nav class="footer">
+        <div class="nav-wrapper white">
+        <div class="s6 m6 l6 left hide-on-small-only"><span class="rights-text">Terms of Use | Privacy | Guidelines</span></div>
+          <div class="s6 m6 l6 right"><span class="copy-right-text">Copyright 2015, KV Social</span></div>
+        </div>
+      </nav>
+      </div>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+    
+    </body>
+  </html>
