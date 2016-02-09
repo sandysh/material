@@ -12,7 +12,12 @@
     </head>
 
     <body>
-      
+              <video id="myVideo" class="responsive-video" autoplay>
+              <source src="images/bg-video.mp4" type="video/mp4">
+              <!-- <source src="movie.ogg" type="video/ogg"> -->
+              Your browser does not support the video tag. Please update you browser to the latest version
+            </video>
+
       <div class="login-wrapper">
         <img src="images/new-logo.png" class="logo-image">
         <div class="row">
@@ -46,5 +51,14 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+          <script type="text/javascript">
+            var vid = document.getElementById("myVideo");
+           // var vid1 = document.getElementById("myVideo");
+            vid.onended = function() {
+                //alert("The video has ended");
+                $this.parent.fadeOut();
+                //vid1.play;               
+            }
+          </script>
     </body>
   </html>

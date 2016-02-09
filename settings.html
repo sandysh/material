@@ -1,153 +1,11 @@
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-
-    <body>
-    
-      <!-- Top Nav Bar  -->
-      <!-- Dropdown Structure -->
-  <header id="header">
-        <ul id="dropdown1" class="dropdown-content">
-          <li><a href="#!"><i class="material-icons dp48 left">settings</i>Settings</a></li>
-          <li class="divider"></li>
-          <li><a href="#!"><i class="material-icons dp48 left" style="color:red">settings_power</i>Logout</a></li>
-        </ul>
-
-        <ul id="drop2" class="dropdown-content">
-          <li><a href="#!"><i class="material-icons dp48 left">settings</i>Settings</a></li>
-          <li class="divider"></li>
-          <li><a href="#!"><i class="material-icons dp48 left" style="color:red">settings_power</i>Logout</a></li>
-        </ul>
-
-    <div class="navbar-fixed">
-    <nav>
-    <div class="nav-wrapper white">
-      <a href="#!" class="brand-logo"><img src="images/logo.png"></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        
-          
-        
-        <li><a class="dropdown-button  grey lighten-2" href="#!" data-activates="dropdown1">
-        
-         <img src="images/yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-        
-        John Doe
-        <span class="user-role">Administrator</span>
-        <i class="material-icons right">arrow_drop_down</i>
-        </a>
-
-        </li>
-       <i class="fa fa-support"></i>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-      <!-- <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Sandesh Satyal<i class="material-icons dp48 right">person_pin</i></a></li>
-               --> 
-      <li><a class="dropdown-button grey lighten-2" href="#!" data-activates="drop2">
-      
-       <img src="images/yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-      
-      John Doe
-      <span class="user-role">Administrator</span>
-      <i class="material-icons right">arrow_drop_down</i>
-      </a>
-
-      </li>
-      <li class="bold active"><a href="#" class="waves-effect waves-teal">Home</a></li>
-            <li class="bold"><a href="#" class="waves-effect waves-teal">Dashboard</a></li>
-            <li class="bold"><a href="#" class="waves-effect waves-teal">Add New Site</a></li>
-            <li class="bold"><a href="#" class="waves-effect waves-teal">Add New Trigger</a></li>
-            <li class="bold"><a href="#" class="waves-effect waves-teal">Site Statistics</a></li>
-            <li class="bold"><a href="#" class="waves-effect waves-teal">Training</a></li>
-            <li class="bold"><a href="#" class="waves-effect waves-teal">Settings</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-</header>
-<!-- Top Nav Ends Here -->
-
-<!-- Side Navigations -->
-<div class="col s12 m4 l4">
-<ul id="nav-mobile" class="side-nav fixed blue-grey darken-4" style="width: 240px;">
-
-          <li><div class="current-site">Current Site :</div></li>
-          <li><a class='modal-trigger' href="#default-site" data-activates='default-site'>Vidlify<i class="fa fa-angle-right current-site-arrow"></i></a></li>
-  
-
-        <li class="bold active"><a href="#" class="waves-effect waves-teal"><i class="fa fa-home"></i>Home</a></li>
-        <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="fa fa-dashboard"></i>Dashboard</a></li>
-        <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="fa fa-tv"></i>Add New Site</a></li>
-        <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="fa fa-bomb"></i>Add New Trigger</a></li>
-        <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="fa fa-bar-chart-o"></i>Site Statistics</a></li>
-        <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="fa fa-user"></i>Training</a></li>
-        <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="fa fa-gear"></i>Settings</a></li>
-      </ul>
-   </div> 
-     <!-- Content Container -->
-      <div class="container">
-      
-      <div class="row">
-      
-      <div class="col s12 m9 l9"><h5>Today's Report</h5></div>
-      <div class="col s12 m3 l3 hide-on-med-and-down"><h5>Total Visitor's</h5></div>
-      
-      <div class="col s12 m12 l12">
-          
-            <div class="col s12 m12 l3">
-              <div class="card-panel custom-panel green-card hoverable">
-                <span class="white-text"><h4>10,176</h4>
-                </span>
-                <span class="card-title stat-title">Visitors</span>
-                <!-- <img src="images/visitors.png" class="cards-stats-image"> -->
-              </div>
-            </div>
-            <div class="col s12 m12 l3">
-              <div class="card-panel custom-panel orange-card hoverable">
-                <span class="white-text"><h4>9,646</h4>
-                </span>
-                <span class="card-title">Unique</span>
-                <!-- <img src="images/unique.png" class="cards-stats-image"> -->
-              </div>
-            </div>
-            <div class="col s12 m12 l3">
-              <div class="card-panel custom-panel red-card hoverable">
-                <span class="white-text"><h4>3,176</h4> 
-                </span>
-                <span class="card-title">Bounced</span>
-                <!-- <img src="images/bounced.png" class="cards-stats-image"> -->
-              </div>
-            </div>
-            <div class="col s12 m5 l3 hide-on-up hide-on-large-only"><h5>Total Visitor's</h5></div>
-            <div class="col s12 m12 l3">
-              <div class="card-panel custom-panel black-card hoverable">
-                <span class="white-text"><h4>10,176</h4>
-                </span>
-                <span class="card-title stat-title">Visitors</span>
-                <!-- <img src="images/total_visitors.png" class="cards-stats-image"> -->
-              </div>
-            </div>
-
-      </div>
-     </div>
 
      
        <div class="row">
          <div class="col s12">
-           <ul class="tabs">
-             <li class="tab col s3"><a href="#user-ac" class="active">Account</a></li>
+           <ul class="tabs settings-tab">
+             <li class="tab col s3"><a href="#user-ac">Account</a></li>
              <li class="tab col s3"><a href="#hosting">Hosting</a></li>
-             <li class="tab col s3"><a href="#reporting">Email Reporting</a></li>
+             <li class="tab col s3"><a href="#reporting" class="active">Email Reporting</a></li>
            </ul>
          </div>
          <div id="user-ac" class="col s12">
@@ -178,41 +36,568 @@
                       <input id="email" type="email" class="validate">
                       <label for="email">Email</label>
                     </div>
+                    <div class="col s12 l7 form-footer">
+                    <button class="waves-effect waves-light btn right" type="reset">CLear</button>
+                    <a class="waves-effect waves-light btn left">Save</a>
+                    </div>
                 </div>
                 </form>
 
                 </div>
               </div>
             </div>
-            <div id="password" class="col s12">Test 2</div>
+            <div id="password" class="col s12">
+              <div class="col s12 m4">
+                <div class="card-panel white">
+                <form>
+                <div class="row">
+                  <div class="input-field col s12 l7">
+                     <input id="oldpassword" type="password" class="validate">
+                      <label for="password">Old Password</label>                   
+                  </div>
+                   <div class="input-field col s12 l7">
+                      <input id="newpassword" type="password" class="validate">
+                      <label for="password">New Password</label>
+                    </div>
+                    <div class="input-field col s12 l7">
+                      <input id="cpassword" type="password" class="validate">
+                      <label for="password">Confirm Password</label>                    
+                    </div>
+                    <div class="col s12 l7 form-footer">
+                    <button class="waves-effect waves-light btn right" type="reset">CLear</button>
+                    <a class="waves-effect waves-light btn left">Save</a>
+                    </div>
+                </div>
+                </form>
+
+                </div>
+              </div>
+            </div>
         
 
      
          </div>
          </div>
-         <div id="hosting" class="col s12">Test 2</div>
-         <div id="reporting" class="col s12">Test 4</div>
-       </div>
+         <!-- Hosting Tab Content -->
+         <div id="hosting" class="col s12">
+         
+          <div class="col s12 m12 l12">
+          <div class="col s12 m5 l5"><h5>Hosting Information</h5></div>
+        
+          <div class="col s12 m4 l2 right">
+          <a class='dropdown-button btn sort-btn' href='#' data-activates='dropdown-sort'><i class="fa fa-arrow-down sort-arrow right">
+          </i>Sort</a>
+          </div>
+
+          <div class="col s12 m3 l4">
+          <form id="demo-2">
+            <input type="search" placeholder="Search">
+          </form>
+           </div>
+           </div>
+          <!-- Dropdown Structure -->
+          <ul id='dropdown-sort' class='dropdown-content'>
+            <li><a href="#!">Daily</a></li>
+            <li><a href="#!">Present</a></li>
+            <li><a href="#!">Hourly</a></li>
+          </ul>
+        
+          <div class="col s12 m12 l12 hosting-panel">
+              <div class="col s12 m6 l3">
+                       <div class="card-panel white hoverable">
+                            Vidlify <i class="fa fa-edit right"> </i>
+                            <hr>
+                            <div class="hosting-detail">Email: <span class="host-email">admin@site.com</span></div>
+                            <div class="hosting-detail">Last Notification: <span class="host-email">12 Jan 2015</span></div>
+                            <div class="host-switch"> Traffic 
+                            <div class="switch right">
+                               <label>
+                                 <input type="checkbox">
+                                 <span class="lever"></span>
+                                </label>
+                             </div>
+                            </div>
+                            <div class="host-switch"> Hosting 
+                            <div class="switch right">
+                               <label>
+                                 <input type="checkbox">
+                                 <span class="lever"></span>
+                                </label>
+                             </div>
+
+                            </div>
+                       
+                       </div>
+              </div>
+
+              <div class="col s12 m6 l3">
+                       <div class="card-panel white hoverable">
+                            Social Contest <i class="fa fa-edit right"> </i>
+                            <hr>
+                            <div class="hosting-detail">Email: <span class="host-email">admin@site.com</span></div>
+                            <div class="hosting-detail">Last Notification: <span class="host-email">12 Jan 2015</span></div>
+                            <div class="host-switch"> Traffic 
+                            <div class="switch right">
+                               <label>
+                                 <input type="checkbox">
+                                 <span class="lever"></span>
+                                </label>
+                             </div>
+                            </div>
+                            <div class="host-switch"> Hosting 
+                            <div class="switch right">
+                               <label>
+                                 <input type="checkbox">
+                                 <span class="lever"></span>
+                                </label>
+                             </div>
+
+                            </div>
+                       
+                       </div>              
+              </div>
+
+              <div class="col s12 m6 l3">
+                       <div class="card-panel white hoverable">
+                            Video Contest <i class="fa fa-edit right"> </i>
+                            <hr>
+                            <div class="hosting-detail">Email: <span class="host-email">admin@site.com</span></div>
+                            <div class="hosting-detail">Last Notification: <span class="host-email">12 Jan 2015</span></div>
+                            <div class="host-switch"> Traffic 
+                            <div class="switch right">
+                               <label>
+                                 <input type="checkbox">
+                                 <span class="lever"></span>
+                                </label>
+                             </div>
+                            </div>
+                            <div class="host-switch"> Hosting 
+                            <div class="switch right">
+                               <label>
+                                 <input type="checkbox">
+                                 <span class="lever"></span>
+                                </label>
+                             </div>
+
+                            </div>
+                       
+                       </div>              
+                </div>
+
+              <div class="col s12 m6 l3">
+                       <div class="card-panel white hoverable">
+                            Videox <i class="fa fa-edit right"> </i>
+                            <hr>
+                            <div class="hosting-detail">Email: <span class="host-email">admin@site.com</span></div>
+                            <div class="hosting-detail">Last Notification: <span class="host-email">12 Jan 2015</span></div>
+                            <div class="host-switch"> Traffic 
+                            <div class="switch right">
+                               <label>
+                                 <input type="checkbox">
+                                 <span class="lever"></span>
+                                </label>
+                             </div>
+                            </div>
+                            <div class="host-switch"> Hosting 
+                            <div class="switch right">
+                               <label>
+                                 <input type="checkbox">
+                                 <span class="lever"></span>
+                                </label>
+                             </div>
+
+                            </div>
+                       
+                       </div>              
+                </div>
+
+              <div class="col s12 m6 l3">
+                       <div class="card-panel white hoverable">
+                            Gtw Hero <i class="fa fa-edit right"> </i>
+                            <hr>
+                            <div class="hosting-detail">Email: <span class="host-email">admin@site.com</span></div>
+                            <div class="hosting-detail">Last Notification: <span class="host-email">12 Jan 2015</span></div>
+                            <div class="host-switch"> Traffic 
+                            <div class="switch right">
+                               <label>
+                                 <input type="checkbox">
+                                 <span class="lever"></span>
+                                </label>
+                             </div>
+                            </div>
+                            <div class="host-switch"> Hosting 
+                            <div class="switch right">
+                               <label>
+                                 <input type="checkbox">
+                                 <span class="lever"></span>
+                                </label>
+                             </div>
+
+                            </div>
+                       
+                       </div>              
+              </div>
+
+              <div class="col s12 m6 l3">
+                       <div class="card-panel white hoverable">
+                            Copy Funnels <i class="fa fa-edit right"> </i>
+                            <hr>
+                            <div class="hosting-detail">Email: <span class="host-email">admin@site.com</span></div>
+                            <div class="hosting-detail">Last Notification: <span class="host-email">12 Jan 2015</span></div>
+                            <div class="host-switch"> Traffic 
+                            <div class="switch right">
+                               <label>
+                                 <input type="checkbox">
+                                 <span class="lever"></span>
+                                </label>
+                             </div>
+                            </div>
+                            <div class="host-switch"> Hosting 
+                            <div class="switch right">
+                               <label>
+                                 <input type="checkbox">
+                                 <span class="lever"></span>
+                                </label>
+                             </div>
+
+                            </div>
+                       
+                       </div>
+              </div>
+
+              <div class="col s12 m6 l3">
+                       <div class="card-panel white hoverable">
+                            Visibly <i class="fa fa-edit right"> </i>
+                            <hr>
+                            <div class="hosting-detail">Email: <span class="host-email">admin@site.com</span></div>
+                            <div class="hosting-detail">Last Notification: <span class="host-email">12 Jan 2015</span></div>
+                            <div class="host-switch"> Traffic 
+                            <div class="switch right">
+                               <label>
+                                 <input type="checkbox">
+                                 <span class="lever"></span>
+                                </label>
+                             </div>
+                            </div>
+                            <div class="host-switch"> Hosting 
+                            <div class="switch right">
+                               <label>
+                                 <input type="checkbox">
+                                 <span class="lever"></span>
+                                </label>
+                             </div>
+
+                            </div>
+                       
+                       </div>
+              </div>
+
+              <div class="col s12 m6 l3">
+                       <div class="card-panel white hoverable">
+                           Ad Hero <i class="fa fa-edit right"> </i>
+                           <hr>
+                                <div class="hosting-detail">Email: <span class="host-email">admin@site.com</span></div>
+                                <div class="hosting-detail">Last Notification: <span class="host-email">12 Jan 2015</span></div>
+                                <div class="host-switch"> Traffic 
+                                <div class="switch right">
+                                   <label>
+                                     <input type="checkbox">
+                                     <span class="lever"></span>
+                                    </label>
+                                 </div>
+                                </div>
+                                <div class="host-switch"> Hosting 
+                                <div class="switch right">
+                                   <label>
+                                     <input type="checkbox">
+                                     <span class="lever"></span>
+                                    </label>
+                                 </div>
+
+                                </div>
+                       
+                       </div>
+              </div>
+
+                        <!-- pagination starts here -->
+                      <div class="row">
+                          <div class="col s12 m12 l12">
+                             <ul class="pagination col l6 offset-l3">
+                                 <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                                 <li class="active"><a href="#!">1</a></li>
+                                 <li class="waves-effect"><a href="#!">2</a></li>
+                                 <li class="waves-effect"><a href="#!">3</a></li>
+                                 <li class="waves-effect"><a href="#!">4</a></li>
+                                 <li class="waves-effect"><a href="#!">5</a></li>
+                                 <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                             </ul>
+                          </div>
+                      </div>
 
 
-      </div> <!-- Container end -->
+
+          </div> 
+
+          </div> <!-- Hosting section ends here -->
+  
+
+         </div>
+         <!-- Email Reportin starts -->
+         <div id="reporting" class="col s12">
+
+          <div class="row">
+           <div class="col s12 m12 l12">
+           <div class="col s12 m5 l4"><h5>Traffic Statistics</h5></div>
+          
+           <div class="col s12 m4 l2 right">
+           <a class='dropdown-button btn sort-btn' href='#' data-activates='dropdown-sort'><i class="fa fa-arrow-down sort-arrow right">
+           </i>Sort</a>
+           </div>
+
+           <div class="col s12 m3 l4">
+           <form id="demo-2">
+             <input type="search" placeholder="Search">
+           </form>
+            </div>
+            </div>
+           <!-- Dropdown Structure -->
+           <ul id='dropdown-sort' class='dropdown-content'>
+             <li><a href="#!">Daily</a></li>
+             <li><a href="#!">Present</a></li>
+             <li><a href="#!">Hourly</a></li>
+           </ul>
+          
+           <div class="col s12 m12 l12">
+               <div class="col s12 m6 l3">
+                        <div class="card-panel white hoverable">
+                         Vidlify 
+                         <i class="fa fa-cog fa-spin fa-lg right modal-trigger" href="#email-settings"></i>
+                         <hr>
+                         <h4 style="color:teal"><i class="fa fa-circle-o traffic-trend stable right"></i>14.7k</h4>
+                         Daily Traffic
+                         <div>Present Traffic: <i class="fa fa-arrow-up traffic-trend right"></i><span class="right">2k</span></div>
+                         <div>Hourly Traffic: <i class="fa fa-arrow-down traffic-trend right"></i><span class="right">110</span></div>
+                        </div>
+               </div>
+
+               <div class="col s12 m6 l3">
+                        <div class="card-panel white hoverable">
+                         Vidlify
+                        <i class="fa fa-cog fa-spin fa-lg right modal-trigger" href="#email-settings"></i>                   <hr>
+                         <h4 style="color:teal"><i class="fa fa-circle-o traffic-trend stable right"></i>14.7k</h4>
+                         Daily Traffic
+                         <div>Present Traffic: <i class="fa fa-arrow-up traffic-trend right"></i><span class="right">2k</span></div>
+                         <div>Hourly Traffic: <i class="fa fa-arrow-down traffic-trend right"></i><span class="right">110</span></div>
+                        </div>
+               </div>
+
+              <div class="col s12 m6 l3">
+                       <div class="card-panel white hoverable">
+                        Vidlify
+                        <i class="fa fa-cog fa-spin fa-lg right modal-trigger" href="#email-settings"></i>                
+                        <hr>
+                        <h4 style="color:teal"><i class="fa fa-circle-o traffic-trend stable right"></i>14.7k</h4>
+                        Daily Traffic
+                        <div>Present Traffic: <i class="fa fa-arrow-up traffic-trend right"></i><span class="right">2k</span></div>
+                        <div>Hourly Traffic: <i class="fa fa-arrow-down traffic-trend right"></i><span class="right">110</span></div>
+                       </div>
+              </div>
+              
+
+              
+              <div class="col s12 m6 l3">
+                       <div class="card-panel white hoverable">
+                        Vidlify
+                        <i class="fa fa-cog fa-spin fa-lg right modal-trigger" href="#email-settings"></i>
+                        <hr>
+                        <h4 style="color:teal"><i class="fa fa-circle-o traffic-trend stable right"></i>14.7k</h4>
+                        Daily Traffic
+                        <div>Present Traffic: <i class="fa fa-arrow-up traffic-trend right"></i><span class="right">2k</span></div>
+                        <div>Hourly Traffic: <i class="fa fa-arrow-down traffic-trend right"></i><span class="right">110</span></div>
+                       </div>
+              </div>
+              <div class="col s12 m6 l3">
+                       <div class="card-panel white hoverable">
+                        Vidlify
+                        <i class="fa fa-cog fa-spin fa-lg right modal-trigger" href="#email-settings"></i>
+                        <hr>
+                        <h4 style="color:teal"><i class="fa fa-circle-o traffic-trend stable right"></i>14.7k</h4>
+                        Daily Traffic
+                        <div>Present Traffic: <i class="fa fa-arrow-up traffic-trend right"></i><span class="right">2k</span></div>
+                        <div>Hourly Traffic: <i class="fa fa-arrow-down traffic-trend right"></i><span class="right">110</span></div>
+                       </div>
+              </div>
+              <div class="col s12 m6 l3">
+                       <div class="card-panel white hoverable">
+                        Vidlify
+                        <i class="fa fa-cog fa-spin fa-lg right modal-trigger" href="#email-settings"></i>                        <hr>
+                        <h4 style="color:teal"><i class="fa fa-circle-o traffic-trend stable right"></i>14.7k</h4>
+                        Daily Traffic
+                        <div>Present Traffic: <i class="fa fa-arrow-up traffic-trend right"></i><span class="right">2k</span></div>
+                        <div>Hourly Traffic: <i class="fa fa-arrow-down traffic-trend right"></i><span class="right">110</span></div>
+                       </div>
+              </div>
+              <div class="col s12 m6 l3">
+                       <div class="card-panel white hoverable">
+                        Vidlify
+                        <i class="fa fa-cog fa-spin fa-lg right modal-trigger" href="#email-settings"></i>
+                        <hr>
+                        <h4 style="color:teal"><i class="fa fa-circle-o traffic-trend stable right"></i>14.7k</h4>
+                        Daily Traffic
+                        <div>Present Traffic: <i class="fa fa-arrow-up traffic-trend right"></i><span class="right">2k</span></div>
+                        <div>Hourly Traffic: <i class="fa fa-arrow-down traffic-trend right"></i><span class="right">110</span></div>
+                       </div>
+              </div>
+              <div class="col s12 m6 l3">
+                       <div class="card-panel white hoverable">
+                        Vidlify
+                        <i class="fa fa-cog fa-spin fa-lg right modal-trigger" href="#email-settings"></i>
+                        <hr>
+                        <h4 style="color:teal"><i class="fa fa-circle-o traffic-trend stable right"></i>14.7k</h4>
+                        Daily Traffic
+                        <div>Present Traffic: <i class="fa fa-arrow-up traffic-trend right"></i><span class="right">2k</span></div>
+                        <div>Hourly Traffic: <i class="fa fa-arrow-down traffic-trend right"></i><span class="right">110</span></div>
+                       </div>
+              </div>
+
+          
 
 
-      
-       <!-- Footer section -->
-      <div class="col s12 m12 l12">
-      <nav class="footer">
-        <div class="nav-wrapper white">
-        <div class="s6 m6 l6 left hide-on-small-only"><span class="rights-text">Terms of Use | Privacy | Guidelines</span></div>
-          <div class="s6 m6 l6 right"><span class="copy-right-text">Copyright 2015, KV Social</span></div>
+           </div>
+
+      <!-- pagination starts here -->
+    <div class="row">
+        <div class="col s12 m12 l12">
+           <ul class="pagination col l6 offset-l3">
+               <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+               <li class="active"><a href="#!">1</a></li>
+               <li class="waves-effect"><a href="#!">2</a></li>
+               <li class="waves-effect"><a href="#!">3</a></li>
+               <li class="waves-effect"><a href="#!">4</a></li>
+               <li class="waves-effect"><a href="#!">5</a></li>
+               <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+           </ul>
         </div>
-      </nav>
+    </div>
+
+           </div>
+
+
+
+         </div>
+         <!-- Email Reporing ends -->
+       
+        <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+          <a class="btn-floating btn-large red modal-trigger" href="#modal1">
+            <i class="large material-icons">add</i>
+          </a>
+        </div>
+
+
+      <!--Email Settings Modal Structure -->
+       <div id="email-settings" class="modal">
+         <div class="modal-content">
+           <h4>Set Email Notification (Site Name)</h4>
+           <div class="row">
+               <form class="col s12">
+                 <div class="row">
+                   <div class="input-field col s4">
+                     <input placeholder="Placeholder" id="first_name" type="number" class="validate">
+                     <label for="first_name">% Change in Traffic</label>
+                   </div>
+                   <div class="input-field col s4">
+                      <select>
+                      <option value="1">Increase</option>
+                      <option value="2">Decrease</option>
+                      <option value="3">Both</option>
+                    </select>
+                     <label for="last_name">Condition</label>
+                   </div>
+                 
+                   <div class="col s3">
+                     <a class="waves-effect waves-light btn constraint-btn">Add Constraint</a>
+                   </div>
+                 </div>
+
+                 <div class="row">
+                   <div class="input-field col s12">
+                    <p>
+                        <input type="checkbox" id="test5" />
+                        <label for="test5">Daily Traffic</label>
+                      </p>
+                    <p>
+                       <input type="checkbox" id="test5" />
+                       <label for="test5">Weekly Traffic</label>
+                     </p>                    
+                    <p>
+                       <input type="checkbox" id="test5" />
+                       <label for="test5">Monthly Traffic</label>
+                     </p>                    
+
+                   </div>
+                 </div>
+               </form>
+             </div> 
+          </div>
+         
+         <a class="waves-effect waves-light btn set-email-btn left" style="margin-right:20px">Set</a>
+           <!-- <a href="#!" class=" modal-action modal-close waves-effect waves-light btn left">Cancel</a> -->
+          </div>
+
+      <!-- Add New Site Modal Structure -->
+      
+      <div id="modal1" class="modal">
+       <div class="modal-content">
+         <h4>Add New Site</h4>
+         <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="example site" id="first_name" type="text" class="validate">
+                  <label for="first_name">Site Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" placeholder="http://www.example.com" type="text" class="validate">
+                  <label for="last_name">Site Main Url</label>
+                </div>
+                <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled selected>Choose your site type</option>
+                    <option value="1">Blog</option>
+                    <option value="2">General</option>
+                    <option value="3">E-Commerce</option>
+                  </select>
+                  <label>Select Site Type</label>
+                </div>
+              </div>
+              </form>
+          </div>
+         </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Save</a>
+        </div>
       </div>
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      
+            <!-- Custom Scripts -->
+      <script type="text/javascript">
+        $(".button-collapse").sideNav();
+         $(document).ready(function() {
+          // Select Box initialization
+          $('select').material_select();
+        });
 
+         // Modal initialization
+           $(document).ready(function(){
+            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal-trigger').leanModal();
+          });
+      </script>
+        
 
     
     </body>

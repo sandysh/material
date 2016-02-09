@@ -1,0 +1,200 @@
+      <style type="text/css" media="screen">
+      #period,#top20{
+        width:470px !important;
+        max-width: 500px;
+      }
+
+      #svg, #donut{
+        width:500px;
+        max-width: 500px;
+        height: 220px;
+        max-height: 220px;
+      }
+      </style>
+
+       <div class="row">
+         <div class="col s12 l12 m12">
+           <ul class="tabs dash-tabs">
+             <li class="tab col s3"><a class="active" href="#today">Today</a></li>
+             <li class="tab col s3"><a href="#lastDay">Last Day</a></li>
+             <li class="tab col s3"><a href="#last7Days">Last 7 Days</a></li>
+             <li class="tab col s3"><a href="#thisMonth">This Month</a></li>
+             <li class="tab col s3"><a href="#lastMonth">Last Month</a></li>
+             <li class="tab col s3"><a href="#last3Month">Last 3 Month</a></li>
+           </ul>
+         </div>
+         <div id="today" class="col s12 m12 l12">
+
+          <div class="row">
+            <div class="col s12 m12 l6">
+            <h5>Website Stats</h5>
+              <div class="card-panel dash">
+                <canvas id="period"></canvas>
+              </div>
+            </div>
+            <div class="col s12 m12 l6">
+            <h5>Top 20 Ref Urls</h5>
+              <div class="card-panel dash">
+                <canvas id="top20"></canvas>
+              </div>
+            </div>
+          </div>
+
+       <div class="row">
+         <div class="col s12 m12 l6">
+         <h5>Visitors Map</h5>
+           <div class="card-panel dash">
+             <div id="wgt-container">
+                      <!-- Map place -->
+             </div>
+            </div>
+         </div>
+         <div class="col s12 m12 l6">
+         <h5>Top 10 Country By Visit</h5>
+           <div class="card-panel dash">
+             <table class="striped top-country">
+               <thead>
+                 <tr>
+                     <th data-field="id">Location</th>
+                     <th data-field="name">Visits</th>
+                     </tr>
+               </thead>
+
+               <tbody>
+                 <tr>
+                   <td>Nepal</td>
+                   <td>1000</td>
+                   </tr>
+                 <tr>
+                   <td>India</td>
+                   <td>1000</td>
+                   </tr>
+                 <tr>
+                   <td>Malaysia</td>
+                   <td>1000</td>
+                   </tr>
+                   <tr>
+                   <td>Thailand</td>
+                   <td>1000</td>
+                   </tr>
+                   <tr>
+                   <td>China</td>
+                   <td>1000</td>
+                   </tr>
+                   <tr>
+                   <td>Philipines</td>
+                   <td>1000</td>
+                   </tr>
+                   <tr>
+                   <td>USA</td>
+                   <td>1000</td>
+                   </tr>
+                   <tr>
+                   <td>UK</td>
+                   <td>1000</td>
+                   </tr>
+                  <tr>
+                   <td>Russia</td>
+                   <td>1000</td>
+                   </tr>
+                  <tr>
+                   <td>Germany</td>
+                   <td>1000</td>
+                   </tr>
+
+
+
+
+
+               </tbody>
+             </table>
+           </div>
+         </div>
+       </div>
+
+       <div class="row">
+         <div class="col s12 m12 l6">
+         <h5>Top 5 Browsers</h5>
+           <div class="card-panel dash">
+            <svg id="svg" style="height:220px">
+              
+            </style>>
+            </svg>
+           </div>
+         </div>
+         <div class="col s12 m12 l6">
+         <h5>Top 5 Resolutions</h5>
+           <div class="card-panel dash">
+             <svg id="donut">
+             </svg>
+           </div>
+         </div>
+       </div>
+
+
+         </div>
+       </div>
+
+<!-- <canvas id="period" height="264" width="624"></canvas> -->
+
+  <!-- <a class="btn-floating btn-large waves-effect waves-light red add-site-btn right"><i class="material-icons">add</i></a> -->
+  <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red modal-trigger" href="#modal1">
+      <i class="large material-icons">add</i>
+    </a>
+  </div>
+
+
+  <!-- Add New Site Modal Structure -->
+  
+  <div id="modal1" class="modal">
+   <div class="modal-content">
+     <h4>Add New Site</h4>
+     <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="example site" id="first_name" type="text" class="validate">
+              <label for="first_name">Site Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" placeholder="http://www.example.com" type="text" class="validate">
+              <label for="last_name">Site Main Url</label>
+            </div>
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Choose your site type</option>
+                <option value="1">Blog</option>
+                <option value="2">General</option>
+                <option value="3">E-Commerce</option>
+              </select>
+              <label>Select Site Type</label>
+            </div>
+          </div>
+          </form>
+      </div>
+     </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Save</a>
+    </div>
+  </div>
+
+<!-- Default site Modal -->
+
+
+
+
+      <!--Import jQuery before materialize.js-->
+
+
+
+        <!-- end of browers charts -->
+        
+        <script>
+
+ 
+        </script>
+    
+    </body>
+  </html>

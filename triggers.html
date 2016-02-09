@@ -1,0 +1,261 @@
+         
+         <h5>Triggers</h5>
+
+          <table class="display striped responsive-table white" id="triggers-table">
+            <thead>
+              <tr>
+                  <th data-field="id">Type</th>
+                  <th data-field="name">Name</th>
+                  <th data-field="price">Triggered</th>
+                  <th data-field="price">Status</th>
+                  <th data-field="price">Action</th>
+                  <th>Edit/Delete</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>General</td>
+                <td>Trigger 1</td>
+                <td>100</td>
+                <td>Active</td>
+                <td>First Action</td>
+                <td><i class="fa fa-edit triggers-edit-icon"></i><i class="fa fa-remove triggers-delete-icon"></i></td>
+              </tr>
+            <tr>
+              <td>General</td>
+              <td>Trigger 1</td>
+              <td>100</td>
+              <td>Active</td>
+              <td>First Action</td>
+              <td><i class="fa fa-edit triggers-edit-icon"></i><i class="fa fa-remove triggers-delete-icon"></i></td>
+            </tr>
+
+            <tr>
+              <td>General</td>
+              <td>Trigger 1</td>
+              <td>100</td>
+              <td>Active</td>
+              <td>First Action</td>
+              <td><i class="fa fa-edit triggers-edit-icon"></i><i class="fa fa-remove triggers-delete-icon"></i></td>
+            </tr>
+
+            </tbody>
+          </table>
+
+          <!-- Add New Trigger Modal Structure -->
+          
+          <div id="add-trigger" class="modal modal-fixed-footer">
+           <div class="modal-content">
+             <h4>Add New Trigger</h4>
+             <div class="row">
+                <form class="col s12">              
+                  <div class="input-field col s12">
+                  <select id="category">
+                    <option value="" disabled selected>Category</option>
+                    <option value="general">General</option>
+                    <option value="custom">Custom</option>
+                  </select>
+                  <label>Select Site Type</label>
+                </div>
+                  <!-- General Category Div -->
+                  <div class="col s12 general-category hide">
+                      <div class="input-field col s12">
+                        <select id="criteria">
+                          <option value="" disabled selected>Criteria</option>
+                          <option value="country">Country Based Trigger</option>
+                          <option value="visits">Visits Based Trigger</option>
+                          <option value="events">Events Based Trigger</option>
+                          <option value="scroll">Scroll Based Trigger</option>
+                        </select>
+                        <label>Select A Criteria</label>
+                      </div>
+
+                  <!-- General Country Based Div start-->
+                    <div class="col s12 country-based hide">
+                          <div class="input-field col s12">
+                          <select>
+                            <option value="" disabled selected>Select Target Country</option>
+                            <option value="2">Nepal</option>
+                            <option value="3">Malaysia</option>
+                            <option value="3">Russia</option>
+                            <option value="3">Philipines</option>
+                          </select>
+                          <label>Select Target Country</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                                <div class="range-field col s12">
+                                <label> Time Spent on Seconds </label>
+                                <input type="range" id="test5" name="amountRange" min="0" max="100" class="col s10" value="0" oninput="this.form.amountInput.value=this.value" />
+                                <input type="number" name="amountInput" class="col s2 visit-value" style="margin-top:-25px" value="0" oninput="this.form.amountRange.value=this.value">
+                              </div>
+
+                      </div>
+                  </div> 
+                  <!-- General Country Based Div end-->
+
+                  <!-- General Visits Based Div start-->
+                    <div class="col s12 visits-based hide">
+                           <div class="input-field col s12">
+                                <div class="range-field col s12">
+                                <label> Visits Threshold </label>
+                                <input type="range" id="test6" name="visitsRange" min="0" max="1000" class="col s10" value="0" oninput="this.form.visitsInput.value=this.value" />
+                                <input type="number" name="visitsInput" class="col s2 visit-value" style="margin-top:-25px" value="0" oninput="this.form.visitsRange.value=this.value">
+                              </div>
+
+                      </div>
+                        <div class="input-field col s12">
+                             <input value="Alvin" id="first_name2" type="number" class="validate">
+                             <label class="active" for="first_name2">Details</label>
+                        </div>
+                  </div> 
+                  <!-- General Visits Based Div end-->
+
+                  <!-- General Events Based Div start-->
+                    <div class="col s12 events-based hide">
+                       <div class="input-field col s12">
+                             <input type="date" class="datepicker">
+                             <label class="active" for="first_name2">Date</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                             <input value="Alvin" id="first_name2" type="number" class="validate">
+                             <label class="active" for="first_name2">Details</label>
+                        </div>
+                  </div> 
+                  <!-- General Events Based Div end-->
+
+                  <!-- General scroll Based Div start-->
+                    <div class="col s12 scroll-based hide">
+                           <div class="input-field col s12">
+                           <select>
+                            <option value="" disabled selected>Select Scroll Percentage</option>
+                            <option value="2">25</option>
+                            <option value="3">50</option>
+                            <option value="3">75</option>
+                            <option value="3">100</option>
+                          </select>
+                          <label>Select Scroll Percentage</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                             <input value="Alvin" id="first_name2" type="number" class="validate">
+                             <label class="active" for="first_name2">Details</label>
+                        </div>
+                  </div> 
+                  <!-- General scroll Based Div end-->
+
+
+
+                    <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Select an Action</option>
+                      <option value="2">Action 1</option>
+                      <option value="3">Action 2</option>
+                      <option value="3">Action 3</option>
+                      <option value="3">Action 4</option>
+                    </select>
+                    <label>Action</label>
+                  </div>
+                  <div class="col s12">
+                  <div class="switch">
+                    <label>
+                      Status
+                      <input type="checkbox">
+                      <span class="lever"></span>
+                      
+                    </label>
+                  </div>
+                  </div>
+
+
+                  </div> <!-- General category div end -->
+
+                  <!-- Custom Category Div -->
+                  <div class="col s12 custom-category hide">
+                  <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Criteria</option>
+                      <option value="2">Visit Based</option>
+                      <option value="3">Time Spent</option>
+                      <option value="3">Events Based</option>
+                    </select>
+                    <label>Select Site Type</label>
+                  </div>
+
+                    <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Select a page / url</option>
+                      <option value="2">Home</option>
+                      <option value="3">About</option>
+                      <option value="3">Services</option>
+                      <option value="3">Contact</option>
+                    </select>
+                    <label>Per Page Url</label>
+                  </div>
+
+                    <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Select Target Country</option>
+                      <option value="2">Nepal</option>
+                      <option value="3">Malaysia</option>
+                      <option value="3">Russia</option>
+                      <option value="3">Philipines</option>
+                    </select>
+                    <label>Select Site Type</label>
+                  </div>
+
+                    <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Select Scroll Percentage</option>
+                      <option value="2">Nepal</option>
+                      <option value="3">Malaysia</option>
+                      <option value="3">Russia</option>
+                      <option value="3">Philipines</option>
+                    </select>
+                    <label>Scroll Percentage</label>
+                  </div>
+
+                    <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Select an Action</option>
+                      <option value="2">Action 1</option>
+                      <option value="3">Action 2</option>
+                      <option value="3">Action 3</option>
+                      <option value="3">Action 4</option>
+                    </select>
+                    <label>Action</label>
+                  </div>
+                  <div class="col s12">
+                  <div class="switch">
+                    <label>
+                      Status
+                      <input type="checkbox">
+                      <span class="lever"></span>
+                      
+                    </label>
+                  </div>
+                  </div>
+
+
+                  </div> <!-- custom category div end -->
+
+
+                  
+             
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Save</a>
+            </div>
+            </form>
+            </div>
+            </div>
+            </div>
+
+<script>
+    $('#triggers-table').dataTable({
+    "bLengthChange": false,
+    "info":false,
+});        
+</script>

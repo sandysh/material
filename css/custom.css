@@ -4,6 +4,15 @@ body{
 }
 
 
+#add-trigger .row{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*.modal .modal-footer{
+	width: 90%;
+}
+*/
 #nav-mobile{
 	width: 210px !important;
 }
@@ -120,7 +129,7 @@ ul #dropdown2 li a:hover {
 /*Container*/
 .container .row {
     margin-left: 2.25rem;
-    margin-right: -12.25rem;
+    margin-right: -11.75rem;
     margin-top: 10px;
     /*border: 1px solid red;*/
 }
@@ -138,7 +147,7 @@ ul #dropdown2 li a:hover {
 }
 
 .card-panel{
-	margin: 0.5rem 1rem 1rem -0.5em;
+	margin: 0.5rem 0rem 1rem -0.5em;
 }
 
 .stat-title{
@@ -255,9 +264,7 @@ ul #dropdown2 li a:hover {
 }
 
 .sort-btn{
-	padding-right: 20px;
 	position: relative;
-	margin-left: auto;
 	top: 8px;
 }
 
@@ -332,6 +339,7 @@ input::-webkit-input-placeholder {
   color: #000;
   background-color: #fff;
   cursor: auto;
+  border-radius: 0px;
 
 }
 
@@ -380,6 +388,138 @@ input::-webkit-input-placeholder {
 
 .sub-tabs .tab a {
 	font-size: 12px;
+}
+
+.form-footer{
+	margin-top: 10px;
+}
+
+.hosting-panel .hosting-detail{
+	font-size: 15px;
+}
+
+.host-email{
+	color: teal;
+}
+
+.host-switch{
+	padding: 3px 0px 0px 0px;
+}
+
+.constraint-btn{
+	margin-top: 20px;
+}
+
+.set-email-btn{
+	position: relative;
+	top: -30px;
+    left: 58px;
+}
+
+/*Dashboard*/
+
+.dash{
+	margin: 0.5rem 2rem 1rem -2.7em;
+	/*overflow: auto;*/
+}
+
+.row .col .s12 .dash{
+	/*margin-right: 12rem;*/
+}
+
+/*Dashboard Top 10 countries*/
+.top-country td{
+	padding: 6px 5px;
+}
+
+.row{
+	/*border: 2px solid white;*/
+}
+
+#today .row{
+	margin-right: -2.1rem;
+}
+
+.triggers-edit-icon{
+	font-size: 25px;
+	padding: 5px;
+	color: teal;
+}
+
+.dash-tabs{
+	width: 98.3%;
+    margin-right: 12px;
+}
+
+.triggers-delete-icon{
+	font-size: 25px;
+	padding: 5px;
+	color: #ee6e73;
+}
+
+.tabs{
+	overflow-x: hidden;
+	cursor: default; 
+}
+
+.green-arrow{
+	color: teal;
+    font-size: 55px;
+    position: relative;
+    top: 12px;
+    left: -2px;
+    z-index: -999;
+}
+
+.red-arrow{
+	color: red;
+    font-size: 55px;
+    position: relative;
+    top: 12px;
+    left: -2px;
+    z-index: -999;
+}
+
+/*.site-least-hr{
+	background: red;
+	width: 98px;
+    height: 5px;
+    position: relative;
+    top: 30px;
+    left: -23px;
+    z-index: -999;
+}
+*/
+
+.site-card .col .m2{
+	margin-right: 5px;
+}
+
+hr{
+	background: teal;
+	height: 2px;
+}
+
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+    zoom: 1;
+    top: -40px !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 0.5em;
+    height: 12px !important;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    padding: 10px 18px;
+     border-bottom: 0px solid !important; 
+}
+
+table.striped>tbody>tr>td {
+    border-radius: 0px;
+    padding-left: 20px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -435,7 +575,61 @@ input::-webkit-input-placeholder {
 	.rights-text{
 		margin-left: 2rem;
 	}
+
+	#demo-2 input[type=search] {
+	    width: 20px;
+	    height: 20px;
+	    padding-left: 10px;
+	    color: transparent;
+	    cursor: pointer;
+	    position: relative;
+	    right: 95px;
+	    top: 7px;
+	}
 }
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+	.container .row {
+	    margin-left: 4.75rem;
+	    margin-right: -9.75rem;
+	    margin-top: 10px;
+	    /*border: 1px solid red;*/
+	}
+
+	.orange-card, .green-card, .red-card, .black-card{
+		background-image: none;
+	}
+
+	.stat-title{
+		display: block;
+	}
+
+	.rights-text{
+		margin-left: 2rem;
+	}
+
+	.card-action h5{
+	  	font-size: 20px;
+	  }
+
+	  #demo-2 input[type=search] {
+	      width: 20px;
+	      height: 20px;
+	      padding-left: 10px;
+	      color: transparent;
+	      cursor: pointer;
+	      position: relative;
+	      right: 50px;
+	      top: 7px;
+	  }
+
+	  .sort-btn{
+	  	padding: 4px 5px 5px 5px;
+	  }
+}
+
+
+/*
 
 @media only screen and (min-width: 900px) and (max-width: 993px) {
 .container .row{
@@ -485,5 +679,5 @@ input::-webkit-input-placeholder {
     right: auto;
     margin-right: auto;
 }
-}
+}*/
 

@@ -1,0 +1,520 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+      .dataTables_wrapper {
+          position: relative;
+          clear: both;
+          zoom: 1;
+          top: -68px !important;
+      }
+      </style>
+    </head>
+
+    <body>
+    
+      <!-- Top Nav Bar  -->
+      <!-- Dropdown Structure -->
+  <header id="header">
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!"><i class="material-icons dp48 left">settings</i>Settings</a></li>
+          <li class="divider"></li>
+          <li><a href="#!"><i class="material-icons dp48 left" style="color:red">settings_power</i>Logout</a></li>
+        </ul>
+
+        <ul id="drop2" class="dropdown-content">
+          <li><a href="#!"><i class="material-icons dp48 left">settings</i>Settings</a></li>
+          <li class="divider"></li>
+          <li><a href="#!"><i class="material-icons dp48 left" style="color:red">settings_power</i>Logout</a></li>
+        </ul>
+
+    <div class="navbar-fixed">
+    <nav>
+    <div class="nav-wrapper white">
+      <a href="#!" class="brand-logo"><img src="images/logo.png"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        
+          
+        
+        <li><a class="dropdown-button  grey lighten-2" href="#!" data-activates="dropdown1">
+        
+         <img src="images/yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+        
+        John Doe
+        <span class="user-role">Administrator</span>
+        <i class="material-icons right">arrow_drop_down</i>
+        </a>
+
+        </li>
+       <i class="fa fa-support"></i>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+      <!-- <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Sandesh Satyal<i class="material-icons dp48 right">person_pin</i></a></li>
+               --> 
+      <li><a class="dropdown-button grey lighten-2" href="#!" data-activates="drop2">
+      
+       <img src="images/yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+      
+      John Doe
+      <span class="user-role">Administrator</span>
+      <i class="material-icons right">arrow_drop_down</i>
+      </a>
+
+      </li>
+      <li class="bold active"><a href="#" class="waves-effect waves-teal">Home</a></li>
+            <li class="bold"><a href="#" class="waves-effect waves-teal">Dashboard</a></li>
+            <li class="bold"><a href="#" class="waves-effect waves-teal">Add New Site</a></li>
+            <li class="bold"><a href="#" class="waves-effect waves-teal">Add New Trigger</a></li>
+            <li class="bold"><a href="#" class="waves-effect waves-teal">Site Statistics</a></li>
+            <li class="bold"><a href="#" class="waves-effect waves-teal">Training</a></li>
+            <li class="bold"><a href="#" class="waves-effect waves-teal">Settings</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+</header>
+<!-- Top Nav Ends Here -->
+
+<!-- Side Navigations -->
+<div class="col s12 m4 l4">
+<ul id="nav-mobile" class="side-nav fixed blue-grey darken-4" style="width: 240px;">
+
+          <li><div class="current-site">Current Site :</div></li>
+          <li><a class='modal-trigger' href="#default-site" data-activates='default-site'>Vidlify<i class="fa fa-angle-right current-site-arrow"></i></a></li>
+  
+
+        <li class="bold active"><a href="#" id="home" class="waves-effect waves-teal"><i class="fa fa-home"></i>Home</a></li>
+        <li class="bold"><a href="#" id="dashboard" class="waves-effect waves-teal"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+        <li class="bold"><a href="#modal1" class="waves-effect waves-teal modal-trigger"><i class="fa fa-tv"></i>Add New Site</a></li>
+        <li class="bold"><a href="#add-trigger" class="waves-effect waves-teal modal-trigger"><i class="fa fa-bomb"></i>Add New Trigger</a></li>
+        <li class="bold"><a href="#" id="site-stats" class="waves-effect waves-teal"><i class="fa fa-bar-chart-o"></i>Site Statistics</a></li>
+        <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="fa fa-user"></i>Training</a></li>
+        <li class="bold"><a href="#" id="settings" class="waves-effect waves-teal"><i class="fa fa-gear"></i>Settings</a></li>
+      </ul>
+   </div> 
+     <!-- Content Container -->
+      <div class="container">
+      
+      <div class="row">
+      
+      <div class="col s12 m9 l9"><h5>Today's Report</h5></div>
+      <div class="col s12 m3 l3 hide-on-med-and-down"><h5>Total Visitor's</h5></div>
+      
+      <div class="col s12 m12 l12">
+          
+            <div class="col s12 m12 l3">
+              <div class="card-panel custom-panel green-card hoverable">
+                <span class="white-text"><h4>10,176</h4>
+                </span>
+                <span class="card-title stat-title">Visitors</span>
+                <!-- <img src="images/visitors.png" class="cards-stats-image"> -->
+              </div>
+            </div>
+            <div class="col s12 m12 l3">
+              <div class="card-panel custom-panel orange-card hoverable">
+                <span class="white-text"><h4>9,646</h4>
+                </span>
+                <span class="card-title">Unique</span>
+                <!-- <img src="images/unique.png" class="cards-stats-image"> -->
+              </div>
+            </div>
+            <div class="col s12 m12 l3">
+              <div class="card-panel custom-panel red-card hoverable">
+                <span class="white-text"><h4>3,176</h4> 
+                </span>
+                <span class="card-title">Bounced</span>
+                <!-- <img src="images/bounced.png" class="cards-stats-image"> -->
+              </div>
+            </div>
+            <div class="col s12 m5 l3 hide-on-up hide-on-large-only"><h5>Total Visitor's</h5></div>
+            <div class="col s12 m12 l3">
+              <div class="card-panel custom-panel black-card hoverable">
+                <span class="white-text"><h4>10,176</h4>
+                </span>
+                <span class="card-title stat-title">Visitors</span>
+                <!-- <img src="images/total_visitors.png" class="cards-stats-image"> -->
+              </div>
+            </div>
+
+      </div>
+      
+    
+
+      </div> <!-- Stats card row end -->
+       
+    <div id="main-content">
+    </div>
+
+    </div> <!-- Container end -->
+
+
+      <!-- Footer section -->
+      <div class="col s12 m12 l12">
+      <nav class="footer">
+        <div class="nav-wrapper white">
+        <div class="s6 m6 l6 left hide-on-small-only"><span class="rights-text">Terms of Use | Privacy | Guidelines</span></div>
+          <div class="s6 m6 l6 right"><span class="copy-right-text">Copyright 2015, KV Social</span></div>
+        </div>
+      </nav>
+      </div>
+      
+      <!-- Modal Structure -->
+      <div id="default-site" class="modal bottom-sheet change-default-site">
+        <div class="modal-content">
+          <h4>Current Site: Vidlify</h4>
+          <div class="row">
+          <div class="col s12 m6 l6">
+          <!--   <div class="input-field col s6">
+              <input value="" id="first_name2" type="text" class="validate">
+              <label class="active" for="first_name2">Search Sites</label>
+            </div>
+       -->    </div>
+          </div>
+        <table class="striped" id="current-site-table">
+             <thead>
+               <tr>
+                   <th data-field="id">Current</th>
+                   <th data-field="id">Site Name</th>
+                   <th data-field="name">Total Visitors</th>
+                   <th data-field="price">Total Triggers</th>
+                   <th data-field="price">Triggers Activated Today</th>
+               </tr>
+             </thead>
+
+             <tbody>
+               <tr>
+                <td style="width:10%">   
+                <p>
+                <input class="with-gap" name="site" type="radio" id="test5" value="site1" />
+                <label for="test5"></label>
+                </p> 
+                </td>
+                 <td>Viral Stores</td>
+                 <td>1000</td>
+                 <td>1000</td>
+                 <td>1000</td>
+               </tr>
+
+               <tr>
+                  <td style="width:10%">   
+                  <p>
+                  <input class="with-gap" name="site" type="radio" id="test6" value="site2" />
+                  <label for="test6"></label>
+                  </p> 
+                  </td>
+                 <td>Visibly</td>
+                 <td>1000</td>
+                 <td>1000</td>
+                 <td>1000</td>
+               </tr>
+
+               <tr>
+                <td style="width:10%">   
+                <p>
+                <input class="with-gap" name="site" type="radio" id="test7" value="site3" />
+                <label for="test7"></label>
+                </p> 
+                </td>
+                 <td>KV Social Bonus</td>
+                 <td>1000</td>
+                 <td>1000</td>
+                 <td>1000</td>
+               </tr>
+             </tbody>
+           </table>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+        </div>
+      </div>
+
+
+      <div id="modal1" class="modal">
+       <div class="modal-content">
+         <h4>Add New Site</h4>
+         <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">Site Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Site Main Url</label>
+                </div>
+                <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled selected>Choose your site type</option>
+                    <option value="1">Blog</option>
+                    <option value="2">General</option>
+                    <option value="3">E-Commerce</option>
+                  </select>
+                  <label>Select Site Type</label>
+                </div>
+              </div>
+              </form>
+          </div>
+         </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Save</a>
+        </div>
+      </div>
+
+      <!-- Add New Trigger Modal Structure -->
+      
+      <div id="add-trigger" class="modal modal-fixed-footer">
+       <div class="modal-content">
+         <h4>Add New Trigger</h4>
+         <div class="row">
+            <form class="col s12">              
+              <div class="input-field col s12">
+              <select id="category">
+                <option value="" disabled selected>Category</option>
+                <option value="general">General</option>
+                <option value="custom">Custom</option>
+              </select>
+              <label>Select Site Type</label>
+            </div>
+              <!-- General Category Div -->
+              <div class="col s12 general-category hide">
+                  <div class="input-field col s12">
+                    <select id="criteria">
+                      <option value="" disabled selected>Criteria</option>
+                      <option value="country">Country Based Trigger</option>
+                      <option value="visits">Visits Based Trigger</option>
+                      <option value="events">Events Based Trigger</option>
+                      <option value="scroll">Scroll Based Trigger</option>
+                    </select>
+                    <label>Select A Criteria</label>
+                  </div>
+
+              <!-- General Country Based Div start-->
+                <div class="col s12 country-based hide">
+                      <div class="input-field col s12">
+                      <select>
+                        <option value="" disabled selected>Select Target Country</option>
+                        <option value="2">Nepal</option>
+                        <option value="3">Malaysia</option>
+                        <option value="3">Russia</option>
+                        <option value="3">Philipines</option>
+                      </select>
+                      <label>Select Target Country</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                            <div class="range-field col s12">
+                            <label> Time Spent on Seconds </label>
+                            <input type="range" id="test5" name="amountRange" min="0" max="100" class="col s10" value="0" oninput="this.form.amountInput.value=this.value" />
+                            <input type="number" name="amountInput" class="col s2 visit-value" style="margin-top:-25px" value="0" oninput="this.form.amountRange.value=this.value">
+                          </div>
+
+                  </div>
+              </div> 
+              <!-- General Country Based Div end-->
+
+              <!-- General Visits Based Div start-->
+                <div class="col s12 visits-based hide">
+                       <div class="input-field col s12">
+                            <div class="range-field col s12">
+                            <label> Visits Threshold </label>
+                            <input type="range" id="test6" name="visitsRange" min="0" max="1000" class="col s10" value="0" oninput="this.form.visitsInput.value=this.value" />
+                            <input type="number" name="visitsInput" class="col s2 visit-value" style="margin-top:-25px" value="0" oninput="this.form.visitsRange.value=this.value">
+                          </div>
+
+                  </div>
+                    <div class="input-field col s12">
+                         <input value="Alvin" id="first_name2" type="number" class="validate">
+                         <label class="active" for="first_name2">Details</label>
+                    </div>
+              </div> 
+              <!-- General Visits Based Div end-->
+
+              <!-- General Events Based Div start-->
+                <div class="col s12 events-based hide">
+                   <div class="input-field col s12">
+                         <input type="date" class="datepicker">
+                         <label class="active" for="first_name2">Date</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                         <input value="Alvin" id="first_name2" type="number" class="validate">
+                         <label class="active" for="first_name2">Details</label>
+                    </div>
+              </div> 
+              <!-- General Events Based Div end-->
+
+              <!-- General scroll Based Div start-->
+                <div class="col s12 scroll-based hide">
+                       <div class="input-field col s12">
+                       <select>
+                        <option value="" disabled selected>Select Scroll Percentage</option>
+                        <option value="2">25</option>
+                        <option value="3">50</option>
+                        <option value="3">75</option>
+                        <option value="3">100</option>
+                      </select>
+                      <label>Select Scroll Percentage</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                         <input value="Alvin" id="first_name2" type="number" class="validate">
+                         <label class="active" for="first_name2">Details</label>
+                    </div>
+              </div> 
+              <!-- General scroll Based Div end-->
+
+
+
+                <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Select an Action</option>
+                  <option value="2">Action 1</option>
+                  <option value="3">Action 2</option>
+                  <option value="3">Action 3</option>
+                  <option value="3">Action 4</option>
+                </select>
+                <label>Action</label>
+              </div>
+              <div class="col s12">
+              <div class="switch">
+                <label>
+                  Status
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  
+                </label>
+              </div>
+              </div>
+
+
+              </div> <!-- General category div end -->
+
+              <!-- Custom Category Div -->
+              <div class="col s12 custom-category hide">
+              <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Criteria</option>
+                  <option value="2">Visit Based</option>
+                  <option value="3">Time Spent</option>
+                  <option value="3">Events Based</option>
+                </select>
+                <label>Select Site Type</label>
+              </div>
+
+                <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Select a page / url</option>
+                  <option value="2">Home</option>
+                  <option value="3">About</option>
+                  <option value="3">Services</option>
+                  <option value="3">Contact</option>
+                </select>
+                <label>Per Page Url</label>
+              </div>
+
+                <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Select Target Country</option>
+                  <option value="2">Nepal</option>
+                  <option value="3">Malaysia</option>
+                  <option value="3">Russia</option>
+                  <option value="3">Philipines</option>
+                </select>
+                <label>Select Site Type</label>
+              </div>
+
+                <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Select Scroll Percentage</option>
+                  <option value="2">Nepal</option>
+                  <option value="3">Malaysia</option>
+                  <option value="3">Russia</option>
+                  <option value="3">Philipines</option>
+                </select>
+                <label>Scroll Percentage</label>
+              </div>
+
+                <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Select an Action</option>
+                  <option value="2">Action 1</option>
+                  <option value="3">Action 2</option>
+                  <option value="3">Action 3</option>
+                  <option value="3">Action 4</option>
+                </select>
+                <label>Action</label>
+              </div>
+              <div class="col s12">
+              <div class="switch">
+                <label>
+                  Status
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  
+                </label>
+              </div>
+              </div>
+
+
+              </div> <!-- custom category div end -->
+
+
+              
+         
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Save</a>
+        </div>
+        </form>
+        </div>
+        </div>
+        </div>
+ 
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/trigger.js"></script>
+
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+      <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+      <script src="http://code.highcharts.com/maps/modules/exporting.js"></script>
+      <script src="http://code.highcharts.com/mapdata/custom/world.js"></script>
+      <!-- Snap Donut chart -->
+      <script src="/js/snap.svg.js"></script>
+      <script src="/js/svg-donut-chart-framework.js"></script>
+      <script src="/js/underscore.min.js"></script>
+      
+         <!-- Custom Scripts -->
+          
+          <script>
+            $('.default-site-dropdown').dropdown({
+                inDuration: 300,
+                outDuration: 225,
+                constrain_width: false, // Does not change width of dropdown to that of the activator
+                hover: true, // Activate on hover
+                gutter: 1, // Spacing from edge
+                belowOrigin: false, // Displays dropdown below the button
+                alignment: 'left' // Displays dropdown with edge aligned to the left of button
+              }
+            );
+          </script>
+
+    
+    </body>
+  </html>

@@ -33,3 +33,9 @@ body{
 	top: -2px;
 	right: 5px;
 }
+
+video{
+	position: absolute;
+	background: #555;
+	opacity: 0.2
+}
