@@ -23,9 +23,9 @@
 		    $("#site-stats").click(function(){
 		        $("#main-content").load("statistics.html");
 		        $.getScript( "js/trigger.js" );
-		        $.ajaxSetup({
-		          cache: true
-		        });
+		        // $.ajaxSetup({
+		        //   cache: true
+		        // });
 		      });
 
 		    $("#settings").click(function(){

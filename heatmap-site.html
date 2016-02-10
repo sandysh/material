@@ -1,0 +1,44 @@
+<div class="col s12"><h5>Showing HeatMaps for Site 1 </h5>(http://www.adhero.com)</div>
+
+   <div class="col s8">
+     <ul class="tabs transparent heatmap-tabs left">
+       <li class="tab col s3"><a href="#test1">Older</a></li>
+       <li class="tab col s3"><a class="active" href="#test2">Week</a></li>
+       <li class="tab col s3 disabled"><a href="#test3">Mon</a></li>
+       <li class="tab col s3"><a href="#test4">Tue</a></li>
+       <li class="tab col s3"><a href="#test4">Wed</a></li>
+       <li class="tab col s3"><a href="#test4">Thu</a></li>
+       <li class="tab col s3"><a href="#test4">Fri</a></li>
+       <li class="tab col s3"><a href="#test4">Sun</a></li>
+       <li class="tab col s3"><a href="#test4">Live</a></li>
+     </ul>
+   </div>
+
+   <div class="col s4">
+   <!-- Dropdown Trigger -->
+    <a class='dropdown-sitemap btn right' href='#' data-activates='sitemap-type'>Type</a>
+
+    <!-- Dropdown Structure -->
+    <ul id='sitemap-type' class='dropdown-content'>
+      <li><a href="#!">Clicks</a></li>
+      <li><a href="#!">Path</a></li>
+      <li><a href="#!">Scroll</a></li>
+    </ul>
+   </div>
+
+<!--    <div id="test1" class="col s12"></div>
+   <div id="test2" class="col s12"></div>
+   <div id="test3" class="col s12"></div>
+   <div id="test4" class="col s12"></div> -->
+
+	<div class="heatmap-data col s12" style="height:500px;border:1px solid">
+		This is heatmap data section
+	</div>
+
+	<script>
+		$('.dropdown-sitemap').dropdown({
+
+		   }
+		 );
+		     
+	</script>

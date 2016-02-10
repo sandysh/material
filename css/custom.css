@@ -522,6 +522,31 @@ table.striped>tbody>tr>td {
     padding-left: 20px;
 }
 
+/*Heatmap section*/
+
+/*.col .s12*/ .heatmap-tabs {
+    width: 100%;
+    font-size: 12px;
+    margin-left: -22px;
+}
+
+.dropdown-sitemap{
+	height: 35px;
+	margin-top: 10px;
+}
+
+.create{
+	height: 35px;
+	margin-top: 10px;
+	left: -65px;
+}
+
+#modal1 .row{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
 	
 	.container .row{
